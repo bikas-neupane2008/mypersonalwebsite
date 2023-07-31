@@ -287,12 +287,12 @@ a:active {
 
 /* Styling for the footer section */
 footer {
+    width: 100%;
+    /* Sets the width of the footer bar to 100% */
     font-size: 100%;
     /* Sets the font size of the footer section to 100% */
     clear: both;
     /* Clears any floated elements to prevent overlapping */
-    margin-left: -20px;
-    /* Moves the footer slightly to the left to align with the content */
     padding: 10px;
     /* Adds padding around the footer section */
     text-align: center;
