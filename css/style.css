@@ -56,7 +56,9 @@ h3 {
 .logo {
     color: #fff;
     font-size: 1.8rem;
+    font-weight: bolder;
     text-transform: uppercase;
+    text-decoration: none;
     display: flex;
     align-items: center;
     /* Vertically centers the logo */
@@ -64,6 +66,10 @@ h3 {
 
 .logo i {
     margin-right: 10px;
+}
+
+.logo:hover {
+    color: #f1c40f; /* Add hover effect for consistency */
 }
 
 .nav-links {
