@@ -2,127 +2,158 @@
 <html lang="en">
 
 <head>
-    <!-- Meta data for the webpage -->
-    <title>Bikash Neupane - Personal Website</title>
+    <title>Bikash Neupane - Professional Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Bikash Neupane">
-    <meta name="keywords" content="Bikash, Neupane, Nepal, Australia">
-    <meta name="author" content="Bikash Neupane - bikas.neupane2008@gmail.com">
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bikash Neupane's Professional Portfolio">
+    <meta name="keywords" content="Bikash Neupane, IT Professional, Software Development, AI, Portfolio">
+    <meta name="author" content="Bikash Neupane">
+    <meta property="og:title" content="Bikash Neupane - Professional Portfolio">
+    <meta property="og:description" content="Showcasing skills in software development, AI, and IT.">
+    <meta property="og:image" content="img/me.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <!-- Start Wrapper to contain the entire content of the webpage -->
-    <div id="wrapper">
-        <!-- Start Navigation bar -->
-        <nav>
-            <a href="#">Home</a>
-            <a href="https://www.linkedin.com/in/bikash-neupane-a132ba300/" target="_blank">LinkedIn</a>
-            <a href="https://www.facebook.com/bikas.neupane2008" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/bksneupane/" target="_blank">Instagram</a>
-            <a href="https://github.com/bikas-neupane2008" target="_blank">GitHub</a>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <h1 class="logo">
+                        <i class="fas fa-home"></i> Bikash Neupane
+                    </h1>
+                    <button class="menu-toggle" aria-label="Toggle Navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="nav-links" role="navigation">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <!-- End Navigation bar -->
-        <!-- Start Header section with the main heading -->
-        <header>
-            <h1><u>Bikash Neupane - Personal Profile</u></h1>
-        </header>
-        <!-- End Header section with the main heading -->
-        <!-- Start Left column for personal information -->
-        <div id="left-column" class="column">
-            <!-- Profile image linked to an external source -->
-            <a href="/img/me.jpg" target="_blank">
-                <img class="profile-image" src="img/me.jpg" alt="Profile Image"
-                    title="Click on the image to load in new tab.">
-            </a>
-            <!-- Start Contact details section -->
-            <p class="contact-details">
-                <strong>Name:</strong> Bikash Neupane<br><br>
-                <strong>Email:</strong>
-                <a href="mailto:bikas.neupane2008@gmail.com" title="Click to send the email.">
-                    bikas.neupane2008@gmail.com </a><br><br>
-                <strong>Phone:</strong>
-                <a href="tel:+61426779679" title="Click to make the call.">+61-426779679</a>
-            </p>
-            <!-- End Contact details section -->
-            <!-- Start Additional information about the geek -->
-            <details>
-                <summary class="more"><b><u>Click here to see more about me</u></b></summary>
-                <p class="about-geek">
-                    <strong>Gender:</strong> Male<br><br>
-                    <strong>DOB:</strong> 14 April, 1993<br><br>
-                    <strong>Marital Status:</strong> Married<br><br>
-                    <strong>Religion:</strong> Hindu<br><br>
-                    <strong>University:</strong> University of New England<br><br>
-                    <strong>Course:</strong> Master of Information Technology<br><br>
-                    <strong>Subject Area:</strong> IT<br><br>
-                    <strong>Graduation Year:</strong> 2024<br><br>
-                    <strong>Bachelor:</strong> London Metropolitan University<br><br>
-                    <strong>Graduation Year:</strong> 2017<br><br>
-                </p>
-            </details>
-            <!-- End Additional information about the geek -->
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h2 id="hero-title">Hi, I'm Bikash Neupane</h2>
+                <p>Highly skilled and versatile Information Technology professional passionate about solving complex
+                    problems through technology.</p>
+                <a href="#contact" class="btn" aria-label="Contact me">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title">About Me</h2>
+                <div class="about-content">
+                    <div>
+                        <p>I am an IT professional with a strong foundation in software development, web technologies,
+                            database management, and artificial intelligence. I am passionate about contributing to
+                            innovative projects in a dynamic environment that fosters continuous learning and
+                            professional growth.</p>
+                    </div>
+                    <div class="profile-image">
+                        <img src="img/me.jpg" alt="Profile Image of Bikash Neupane" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title">Technical Skills</h2>
+                <div class="skills-list">
+                    <article class="skill-item">
+                        <h3>Programming Languages</h3>
+                        <p>Java, Python, C, JavaScript, TypeScript</p>
+                    </article>
+                    <article class="skill-item">
+                        <h3>Web Technologies</h3>
+                        <p>HTML5, CSS3, React.js, Laravel, PHP, RESTful APIs</p>
+                    </article>
+                    <article class="skill-item">
+                        <h3>Mobile Development</h3>
+                        <p>Android SDK, Java, Firebase</p>
+                    </article>
+                    <article class="skill-item">
+                        <h3>Databases</h3>
+                        <p>MySQL, SQLite, MongoDB, Firebase Realtime Database</p>
+                    </article>
+                    <article class="skill-item">
+                        <h3>Tools & Frameworks</h3>
+                        <p>Git, UNIX/Linux, Tableau, Power BI, Tkinter, Socket Programming</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title">Projects</h2>
+                <div class="projects-list">
+                    <article class="project-item">
+                        <h3>NCD Screening App</h3>
+                        <p>Android application for Neurocognitive Disorders (NCD) screening following DSM-5 standards,
+                            featuring machine learning integration for data analysis and prediction.</p>
+                    </article>
+                    <article class="project-item">
+                        <h3>Full-Stack Blog Application</h3>
+                        <p>Developed a blog application using React.js with Laravel backend, including user
+                            authentication, CRUD operations, and role-based access control.</p>
+                    </article>
+                    <article class="project-item">
+                        <h3>Saboteur Game Development</h3>
+                        <p>Created a social deduction game in Python, implementing AI planning and rational behavior for
+                            game agents.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title">Contact Me</h2>
+                <div class="contact-details">
+                    <p><strong>Phone:</strong> <a href="tel:+61426779679"
+                            aria-label="Phone Bikash Neupane">+61-426-779-679</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:bikas.neupane2008@gmail.com"
+                            aria-label="Email Bikash Neupane">bikas.neupane2008@gmail.com</a></p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bikash-neupane-a132ba300/" target="_blank"
+                            aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/bikas-neupane2008" target="_blank" aria-label="GitHub Profile"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/bksneupane/" target="_blank"
+                            aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/bikas.neupane2008" target="_blank"
+                            aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bikash Neupane. All rights reserved.</p>
         </div>
-        <!-- End Left column for personal information -->
-        <!-- Start Right column for geek preferences and activities -->
-        <div id="right-column" class="column">
-            <!-- Description of what makes the geek unique -->
-            <h2 class="column-heading">My short info</h2>
-            <p class="description"><i>A curious person who always wants to grow more and more.</i>
-            </p>
-            <!-- Geek's preferred types of relationships -->
-            <h2 class="column-heading">Just a just</h2>
-            <ol class="relationships-types-list">
-                <li><a href="#relationships-types-list">Just a just</a></li>
-                <li><a href="#relationships-types-list">Just a just</a></li>
-            </ol>
-            <!-- Geek's preferred romantic activities -->
-            <h2 class="column-heading">Just a just</h2>
-            <ol class="romantic-activities-list">
-                <li><a href="#romantic-activities-list">Just a just</a></li>
-            </ol>
-            <!-- Geek's favorite Valentine's gift -->
-            <h2 class="column-heading">Just a just</h2>
-            <ol class="valentines-gift-list">
-                <li><a href="#valentines-gift-list">Just a just</a></li>
-            </ol>
-            <!-- Geek's favorite hobbies -->
-            <h2 class="column-heading">Just a just</h2>
-            <ol class="hobbies-list">
-                <li><a href="#hobbies-list">Just a just</a></li>
-                <li><a href="#hobbies-list">Just a just</a></li>
-                <li><a href="#hobbies-list">Just a just</a></li>
-            </ol>
-            <!-- Geek's favorite TV shows and games -->
-            <h2 class="column-heading">Just a just</h2>
-            <ul>
-                <li>
-                    <u class="favorites-tv-list">Just a just</u>
-                    <ol class="nested-list">
-                        <li><a href="#favorites-tv-list">Just a just</a></li>
-                    </ol>
-                </li>
-                <li>
-                    <u class="favorites-games-list">Just a just</u>
-                    <ol class="nested-list">
-                        <li><a href="#favorites-games-list">Just a just</a></li>
-                        <li><a href="#favorites-games-list">Just a just</a></li>
-                    </ol>
-                </li>
-            </ul>
-        </div>
-        <!-- End Right column for geek preferences and activities -->
-    </div>
-    <!-- End Wrapper to contain the entire content of the webpage -->
-    <!-- Start Footer section -->
-    <footer id="footer">
-        <p><a href="#wrapper">Back to top</a><br>
-            <strong>&copy; Bikash Neupane &hearts; 2023</strong>
-        </p>
     </footer>
-    <!-- End Footer section -->
+
+    <!-- Link to external JS -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
