@@ -12,3 +12,14 @@ function toggleUnits(button) {
         button.textContent = "See more";
     }
 }
+
+function toggleProject(button) {
+    const projectDetails = button.nextElementSibling;
+    if (projectDetails.style.display === "none") {
+        projectDetails.style.display = "block";
+        button.textContent = "See less";
+    } else {
+        projectDetails.style.display = "none";
+        button.textContent = "See more";
+    }
+}
