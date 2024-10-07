@@ -92,7 +92,6 @@ h3 {
     transition: color 0.3s ease;
     display: flex;
     align-items: center;
-    /* Ensures that text is centered inside the anchor */
     height: 100%;
 }
 
@@ -101,7 +100,7 @@ h3 {
 }
 
 .menu-toggle {
-    display: none; /* Hide toggle button by default */
+    display: none; 
     background: none;
     border: none;
     color: #fff;
@@ -112,18 +111,14 @@ h3 {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .nav-left {
         justify-content: space-between;
         width: 100%;
         display: flex;
-        align-items: center; /* Center vertically */
-        padding-right: 20px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center; /* Center the home icon vertically */
+        align-items: center;
+        height: 60px;
+        padding-bottom: 10%;
     }
 
     .menu-toggle {
@@ -134,7 +129,9 @@ h3 {
         font-size: 1.5rem;
         cursor: pointer;
         display: flex;
-        align-items: center; /* Center the menu toggle icon vertically */
+        height: 100%;
+        padding-right: 10%;
+        align-items: center;
     }
 
     .nav-links {
