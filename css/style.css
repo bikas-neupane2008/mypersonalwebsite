@@ -101,7 +101,7 @@ h3 {
 }
 
 .menu-toggle {
-    display: none;
+    display: none; /* Hide toggle button by default */
     background: none;
     border: none;
     color: #fff;
@@ -111,16 +111,16 @@ h3 {
     align-items: center;
 }
 
-/* Media Queries */
+/* Mobile Styles */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
         background-color: #333;
         position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
+        top: 60px; /* Position it directly under the navbar */
+        left: 0; /* Start at the left of the viewport */
+        width: 100%; /* Make it span the width of the screen */
         padding: 0;
     }
 
@@ -128,15 +128,23 @@ h3 {
         display: flex;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-
     .nav-links a {
         padding: 15px 20px;
         text-align: center;
+        width: 100%; /* Ensure links take up full width on mobile */
     }
 
+    /* Show menu toggle button */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Adjust navbar contents to ensure proper alignment */
     .nav-left {
         justify-content: space-between;
         width: 100%;
